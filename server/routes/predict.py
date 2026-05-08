@@ -11,7 +11,7 @@ encoders = None
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["http://localhost:5173" or "https://car-price-prediction-webapp-pdmx.onrender.com"],
     allow_methods=["*"],
     allow_headers=["*"],
     allow_credentials=True,
