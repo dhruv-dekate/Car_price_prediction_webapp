@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual Environment
+venv/
+env/
+.env
+.venv
+
+# Environment Variables
+.env
+.env.local
+.env.production
+
+# Artifacts (model files - too large for git)
+artifacts/
+
+# Data
+data/
+*.csv
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
