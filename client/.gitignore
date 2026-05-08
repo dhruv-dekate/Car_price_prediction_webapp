@@ -55,3 +55,5 @@ Thumbs.db
 # Vite specific
 .vite/
 vite.config.js.timestamp-*
+
+dist/
