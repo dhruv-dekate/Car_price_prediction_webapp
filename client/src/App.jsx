@@ -40,7 +40,7 @@ const App = () => {
     try {
       console.log(data);
 
-      const response = await axios.post("http://localhost:8000/predict", data);
+      const response = await axios.post(["http://localhost:8000/predict" || "https://car-price-prediction-webapp-pdmx.onrender.com" ], data);
       const result = response.data.predicted_price;
       setPrediction(result);
       console.log(result);
