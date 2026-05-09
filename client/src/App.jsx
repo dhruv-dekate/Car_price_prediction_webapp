@@ -11,11 +11,11 @@ const App = () => {
     cylindernumber: "",
     fuelsystem: "",
     enginetype: "",
-    enginesize: 0,
-    curbweight: 0,
-    horsepower: 0,
-    carwidth: 0,
-    carlength: 0,
+    enginesize: null,
+    curbweight: null,
+    horsepower: null,
+    carwidth: null,
+    carlength: null,
   });
 
   const [prediction, setPrediction] = useState(null);
@@ -40,7 +40,7 @@ const App = () => {
     try {
       console.log(data);
 
-      const response = await axios.post(["http://localhost:8000/predict" || "https://car-price-prediction-webapp-pdmx.onrender.com" ], data);
+      const response = await axios.post("http://localhost:8000/predict", data);
       const result = response.data.predicted_price;
       setPrediction(result);
       console.log(result);
@@ -54,11 +54,11 @@ const App = () => {
         cylindernumber: "",
         fuelsystem: "",
         enginetype: "",
-        enginesize: 0,
-        curbweight: 0,
-        horsepower: 0,
-        carwidth: 0,
-        carlength: 0,
+        enginesize: null,
+        curbweight: null,
+        horsepower: null,
+        carwidth: null,
+        carlength: null,
       });
     } catch (error) {
       console.error("Error fetching prediction:", error);
